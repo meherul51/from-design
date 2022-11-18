@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form">
+        <input class="input1" type="text" name="" id="username" placeholder="Username" required><br>
+        <input class="input2" type="email" name="" id="email" placeholder="Email" required> <br>
+        <input class="input3" type="submit" value="Register">
+    </form>
+
+    <script>
+        var from = document.getElementById('form')
+        from.addEventListener('submit',function(){
+            event.preventDefault();
+        var username = document.getElementById('username').value
+        console.log(username);
+
+        var email = document.getElementById('email').value
+        console.log(email)
+        })
+    </script>
+</body>
+</html>
